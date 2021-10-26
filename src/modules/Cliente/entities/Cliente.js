@@ -16,8 +16,8 @@ const ClienteSchema = new Schema({
     required: true,
     default: Date.now,
   },
-})
+});
 
-const Cliente = mongoose.model('Cliente', ClienteSchema);
+const Cliente = mongoose.model("Cliente", ClienteSchema);
 
 export default Cliente;
