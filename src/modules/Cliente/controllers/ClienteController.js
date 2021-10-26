@@ -2,9 +2,10 @@ import moment from "moment";
 import Cliente from "../entities/Cliente";
 // import CreateFuncionarioService from "../services/CreateFuncionarioService";
 
+import { data } from "../../../mock/data";
+
 export default {
   async store(request, response) {
-    const data = request.body;
     const cliente = await Cliente.create(data);
     return response.json(cliente);
   },
