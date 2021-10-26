@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const { DB_USER, DB_PASS, DB_HOST, DB_PORT, DB_NAME } = process.env;
+const { DB_HOST, DB_PORT, DB_NAME } = process.env;
 
 class Database {
   constructor() {
@@ -10,8 +10,7 @@ class Database {
 
   mongo() {
     this.mongoConnection = mongoose.connect(
-      // `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`,
-      'mongodb://localhost:27017/finance',
+      `mongodb://${DB_HOST}:${DB_PORT}/${DB_NAME}`,
       {
         useNewUrlParser: true,
       }
