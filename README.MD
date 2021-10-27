@@ -66,8 +66,18 @@ $ npm install
 # ou
 $ yarn
 
+# Instale o package make para linux ou mac
+$ sudo apt install make 
+
 # Execute os containers de backend e do banco de dados (api/db)
 $ make up
+
+# Para derrubars os containers
+$ make down
+
+# Para visualizar os logs
+$ make logs
+
 
 # O servidor backend inciará na porta:3332 - acesse http://localhost:3332
 
@@ -98,7 +108,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-## Publicação
+<!-- ## Publicação
 Projeto publicado na Digital Ocean para fins de testes.
 
 - **[Fake de Clientes (GET)](https://fullstack.pitstopcabines.com.br/fake)**
@@ -107,7 +117,7 @@ Projeto publicado na Digital Ocean para fins de testes.
 - **[Listagem de Clientes inadimplentes por nome (GET)](https://fullstack.pitstopcabines.com.br/clientes/cliente?name="Teste")**
 
 Link do FrontEnd para testes.
-- **[FrontEnd](https://fullstack.pitstopcabines.com.br/cliente)**
+- **[FrontEnd](https://fullstack.pitstopcabines.com.br/cliente)** -->
 
 <!-- <p align="left">
   <a href="https://insomnia.rest/download" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
