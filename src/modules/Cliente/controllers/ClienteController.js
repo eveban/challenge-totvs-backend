@@ -1,11 +1,16 @@
 import moment from "moment";
 import Cliente from "../entities/Cliente";
-// import CreateFuncionarioService from "../services/CreateFuncionarioService";
 
 import { data } from "../../../mock/data";
 
 export default {
+  async fakeData(request, response) {
+    const cliente = await Cliente.create(data);
+    return response.json(cliente);
+  },
+
   async store(request, response) {
+    const { data } = request.body;
     const cliente = await Cliente.create(data);
     return response.json(cliente);
   },
@@ -25,24 +30,4 @@ export default {
 
     return response.json(cliente);
   },
-
-  // async update(request, response) {
-  //   const data = request.body;
-  //   const { id } = request.params;
-  //   console.log(id);
-  //   await Cliente.updateOne(data, {
-  //     where: { id },
-  //   });
-  //   const funcionarioAtualizado = await Cliente.findById(id);
-  //   return response.json(funcionarioAtualizado);
-  // },
-
-  // async delete(request, response) {
-  //   const { id } = request.params;
-  //   console.log(id);
-  //   await Funcionario.destroy({
-  //     where: { id },
-  //   });
-  //   return response.json({ message: "Funcionário excluído com sucesso" });
-  // },
 };
