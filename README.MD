@@ -95,7 +95,7 @@ $ make logs
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
-#### [](https://github.com/tgmarinho/Ecoleta#server-nodejs--typescript)**Server** ([NodeJS](https://nodejs.org/en/))
+#### **Server** ([NodeJS](https://nodejs.org/en/))
 
 - **[Express](https://expressjs.com/)**
 - **[Mongoose](https://mongoosejs.com/)**
